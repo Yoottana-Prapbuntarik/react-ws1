@@ -1,0 +1,80 @@
+/* 
+Navbar
+
+Footer
+
+Carousel
+
+Article
+
+
+ */
+
+
+/* Navbar */
+.alpha{
+	background: rgba(0, 0, 0, 0.5);
+}
+.navbarLink{
+	
+	padding-right: .5rem; 
+	padding-left: .5rem; 
+	display: inline-block; 
+	padding: .5rem 1rem;
+}
+.navbarLink a {
+	color: rgba(0, 0, 0, 1);
+	text-decoration: none;
+}
+.navbarLink a:hover{
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	padding: 5px;
+}
+
+
+
+
+/* Footer */
+.fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Carousel */
+.carousel-item > img { 
+  width: 100%; 
+}
+
+
+/* Article */
+.wrapper-card-img{
+	position: relative; 
+	/* ไม่กระโดด */
+	overflow: hidden; 
+	 /* ซ่อนภาพ*/
+}
+.wrapper-card-img::after{
+	content:'';
+	padding-top:56.25%;
+	display: block;
+	height: 0;
+	
+}
+
+.wrapper-card-img img{
+	position: absolute;
+	top: 0;
+}
+.wrapper-card-img img:hover{
+transform: scale(1.1);
+transition: 1s;
+}
+
+
+
+
+
