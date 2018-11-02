@@ -7,17 +7,16 @@ import Error from './Components/Error';
 import Navbar from  './Components/Navbar';
 import Portfolio from './Components/Portfolio';
 import Portdetail from './Components/Portdetail';
-import {BrowserRouter , Route, Switch } from 'react-router-dom';
+
+import { BrowserRouter,Route, Switch } from 'react-router-dom';
 
 class App extends Component {
 	render(){
 		return(
-			
 		<BrowserRouter>
-		<div>
-		<Navbar/>	
+		<div>	
+		<Navbar/>
 		<Switch>
-
 		<Route exact path="/" component={Home} />
 		<Route path="/About" component={About} />
 		<Route path="/Portfolio" component={Portfolio} />
